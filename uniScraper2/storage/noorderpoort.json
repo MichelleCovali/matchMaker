@@ -1,0 +1,1299 @@
+{
+    "config": {
+        "pageSize": 20,
+        "type": "programmes",
+        "typeId": null,
+        "disableSearch": false,
+        "disableSidebar": false,
+        "disableFilters": false,
+        "disableHeader": false,
+        "disableTabs2": false,
+        "disableQuickFilters": true,
+        "disableCTA": false,
+        "disableTitle": false,
+        "totalResults": 157,
+        "maxFilters": 100,
+        "maxSubFilters": 100,
+        "maxSelectedFiltersVisible": 100,
+        "labels": {
+            "allFilters": "Toon alle filters",
+            "fallBackText": "Probeer een andere zoekopdracht, gebruik het filter of neem contact met ons op.",
+            "lessFilters": "Toon minder filters",
+            "showResultsCount": "Toon resultaten",
+            "searchWith": "Zoeken met",
+            "closeFilters": "Sluit Filters",
+            "deleteAll": "Wis filters",
+            "filters": "Filters",
+            "searchLabel": "Zoek op naam, locatie, sector of crebonummer",
+            "title": "Opleidingen",
+            "showFilters": "Toon filters",
+            "removeInput": "Verwijder input",
+            "nextButton": "Volgende",
+            "search": "Zoeken",
+            "fallBack": "Er zijn geen opleidingen gevonden",
+            "results": "resultaten",
+            "prevButton": "Vorige",
+            "timeAgo": "geleden",
+            "ctaTitle": "18 juni: Last Minute Event",
+            "ctaDescription": "als je nog geen opleiding hebt gekozen",
+            "ctaButtonHref": "\/over-noorderpoort\/agenda\/last-minute-event-18-juni-2025",
+            "ctaButtonLabel": "Meld je aan",
+            "modalButtonLabel": "Bekijk opleidingen",
+            "modalTitle": "Opleidingen",
+            "modalCloseLabel": "Sluiten",
+            "result": "resultaat",
+            "upToAndIncluding": "t\/m"
+        }
+    },
+    "filters": [
+        {
+            "id": "type",
+            "type": "CheckboxList",
+            "label": "Leerweg",
+            "expand": false,
+            "subFilters": null,
+            "items": [
+                {
+                    "id": "2",
+                    "label": "BBL deeltijd",
+                    "itemsCount": 99,
+                    "checked": false
+                },
+                {
+                    "id": "1",
+                    "label": "BOL voltijd",
+                    "itemsCount": 131,
+                    "checked": false
+                }
+            ]
+        },
+        {
+            "id": "discipline",
+            "type": "None",
+            "label": "Vakgebied",
+            "expand": false,
+            "subFilters": [
+                {
+                    "id": "1203",
+                    "type": "CheckboxList",
+                    "label": "Creatieve beroepen",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1494",
+                            "label": "Media, vormgeving en signing",
+                            "itemsCount": 9,
+                            "checked": false
+                        },
+                        {
+                            "id": "1495",
+                            "label": "Podiumberoepen en evenementen",
+                            "itemsCount": 7,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1204",
+                    "type": "CheckboxList",
+                    "label": "Economie en ondernemen",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1496",
+                            "label": "Economie, marketing en administratie",
+                            "itemsCount": 7,
+                            "checked": false
+                        },
+                        {
+                            "id": "1497",
+                            "label": "Handel, ondernemerschap en leidinggeven",
+                            "itemsCount": 12,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1211",
+                    "type": "CheckboxList",
+                    "label": "Entree",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1498",
+                            "label": "Entree",
+                            "itemsCount": 9,
+                            "checked": false
+                        },
+                        {
+                            "id": "1499",
+                            "label": "Entree NT2",
+                            "itemsCount": 6,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1205",
+                    "type": "CheckboxList",
+                    "label": "Horeca, bakkerij en toerisme",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "2832",
+                            "label": "Bakkerij",
+                            "itemsCount": 5,
+                            "checked": false
+                        },
+                        {
+                            "id": "1500",
+                            "label": "Horeca",
+                            "itemsCount": 19,
+                            "checked": false
+                        },
+                        {
+                            "id": "1501",
+                            "label": "Toerisme en recreatie",
+                            "itemsCount": 5,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1208",
+                    "type": "CheckboxList",
+                    "label": "IT",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1849",
+                            "label": "ICT-beheer",
+                            "itemsCount": 3,
+                            "checked": false
+                        },
+                        {
+                            "id": "1848",
+                            "label": "Programmeren",
+                            "itemsCount": 1,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1210",
+                    "type": "CheckboxList",
+                    "label": "Laboratorium- en procestechniek",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1504",
+                            "label": "Laboratoriumtechniek",
+                            "itemsCount": 3,
+                            "checked": false
+                        },
+                        {
+                            "id": "1505",
+                            "label": "Procestechniek",
+                            "itemsCount": 7,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "4393",
+                    "type": "CheckboxList",
+                    "label": "Maritiem",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "4394",
+                            "label": "Scheepvaart",
+                            "itemsCount": 4,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1213",
+                    "type": "CheckboxList",
+                    "label": "Mobiliteit, transport en logistiek",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1506",
+                            "label": "Autotechniek",
+                            "itemsCount": 12,
+                            "checked": false
+                        },
+                        {
+                            "id": "4396",
+                            "label": "Fietstechniek",
+                            "itemsCount": 3,
+                            "checked": false
+                        },
+                        {
+                            "id": "1508",
+                            "label": "Transport en logistiek",
+                            "itemsCount": 10,
+                            "checked": false
+                        },
+                        {
+                            "id": "4397",
+                            "label": "Verkoop",
+                            "itemsCount": 2,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1207",
+                    "type": "CheckboxList",
+                    "label": "Techniek en bouw",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1492",
+                            "label": "Bouw",
+                            "itemsCount": 5,
+                            "checked": false
+                        },
+                        {
+                            "id": "1493",
+                            "label": "Techniek",
+                            "itemsCount": 20,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1212",
+                    "type": "CheckboxList",
+                    "label": "Uiterlijke verzorging",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1511",
+                            "label": "Kapper",
+                            "itemsCount": 5,
+                            "checked": false
+                        },
+                        {
+                            "id": "2860",
+                            "label": "Schoonheidsspecialist",
+                            "itemsCount": 1,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1206",
+                    "type": "CheckboxList",
+                    "label": "Veiligheid",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1502",
+                            "label": "Beveiliging",
+                            "itemsCount": 3,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "1209",
+                    "type": "CheckboxList",
+                    "label": "Zorg en welzijn",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "4398",
+                            "label": "Assisterende gezondheidszorg",
+                            "itemsCount": 3,
+                            "checked": false
+                        },
+                        {
+                            "id": "1510",
+                            "label": "Begeleiding en welzijn",
+                            "itemsCount": 8,
+                            "checked": false
+                        },
+                        {
+                            "id": "2893",
+                            "label": "Kinderopvang en onderwijs",
+                            "itemsCount": 3,
+                            "checked": false
+                        },
+                        {
+                            "id": "1509",
+                            "label": "Verpleging en verzorging",
+                            "itemsCount": 10,
+                            "checked": false
+                        }
+                    ]
+                }
+            ],
+            "items": []
+        },
+        {
+            "id": "level",
+            "type": "CheckboxList",
+            "label": "Niveau",
+            "expand": false,
+            "subFilters": null,
+            "items": [
+                {
+                    "id": "niveau_1",
+                    "label": "Niveau 1",
+                    "itemsCount": 15,
+                    "checked": false
+                },
+                {
+                    "id": "niveau_2",
+                    "label": "Niveau 2",
+                    "itemsCount": 29,
+                    "checked": false
+                },
+                {
+                    "id": "niveau_3",
+                    "label": "Niveau 3",
+                    "itemsCount": 43,
+                    "checked": false
+                },
+                {
+                    "id": "niveau_4",
+                    "label": "Niveau 4",
+                    "itemsCount": 70,
+                    "checked": false
+                }
+            ]
+        },
+        {
+            "id": "location",
+            "type": "CheckboxList",
+            "label": "Locatie",
+            "expand": false,
+            "subFilters": [
+                {
+                    "id": "Amsterdam",
+                    "type": "CheckboxList",
+                    "label": "Amsterdam",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1479",
+                            "label": "Rustenburgerstraat 436",
+                            "itemsCount": 1,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "Appingedam",
+                    "type": "CheckboxList",
+                    "label": "Appingedam",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "3650",
+                            "label": "Pastorielaan 4",
+                            "itemsCount": 10,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "Assen",
+                    "type": "CheckboxList",
+                    "label": "Assen",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "4552",
+                            "label": "Anne de Vriesstraat 70",
+                            "itemsCount": 5,
+                            "checked": false
+                        },
+                        {
+                            "id": "1481",
+                            "label": "Paul Kr\u00fcgerstraat 1",
+                            "itemsCount": 1,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "Delfzijl",
+                    "type": "CheckboxList",
+                    "label": "Delfzijl",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1474",
+                            "label": "Duurswoldlaan 2A",
+                            "itemsCount": 7,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "Groningen",
+                    "type": "CheckboxList",
+                    "label": "Groningen",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1469",
+                            "label": "Bornholmstraat 31",
+                            "itemsCount": 22,
+                            "checked": false
+                        },
+                        {
+                            "id": "1470",
+                            "label": "Boumaboulevard 113",
+                            "itemsCount": 32,
+                            "checked": false
+                        },
+                        {
+                            "id": "1465",
+                            "label": "Hora Siccamasingel 177",
+                            "itemsCount": 17,
+                            "checked": false
+                        },
+                        {
+                            "id": "1473",
+                            "label": "Muntinglaan 3",
+                            "itemsCount": 9,
+                            "checked": false
+                        },
+                        {
+                            "id": "1475",
+                            "label": "Verlengde Visserstraat 20",
+                            "itemsCount": 16,
+                            "checked": false
+                        },
+                        {
+                            "id": "1467",
+                            "label": "Verzetsstrijderslaan 2",
+                            "itemsCount": 11,
+                            "checked": false
+                        },
+                        {
+                            "id": "1472",
+                            "label": "Winschoterdiep 50",
+                            "itemsCount": 16,
+                            "checked": false
+                        },
+                        {
+                            "id": "2861",
+                            "label": "Zernikepark 21",
+                            "itemsCount": 5,
+                            "checked": false
+                        },
+                        {
+                            "id": "1463",
+                            "label": "Zernikeplein 11",
+                            "itemsCount": 3,
+                            "checked": false
+                        },
+                        {
+                            "id": "2830",
+                            "label": "Zernikeplein 7",
+                            "itemsCount": 1,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "Stadskanaal",
+                    "type": "CheckboxList",
+                    "label": "Stadskanaal",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1464",
+                            "label": "Sportparklaan 5",
+                            "itemsCount": 33,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "Veendam",
+                    "type": "CheckboxList",
+                    "label": "Veendam",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1468",
+                            "label": "Hertenkampstraat 6",
+                            "itemsCount": 9,
+                            "checked": false
+                        }
+                    ]
+                },
+                {
+                    "id": "Winschoten",
+                    "type": "CheckboxList",
+                    "label": "Winschoten",
+                    "expand": false,
+                    "subFilters": null,
+                    "items": [
+                        {
+                            "id": "1466",
+                            "label": "P.C. Hooftlaan 1",
+                            "itemsCount": 25,
+                            "checked": false
+                        }
+                    ]
+                }
+            ],
+            "items": []
+        },
+        {
+            "id": "duration",
+            "type": "CheckboxList",
+            "label": "Duur",
+            "expand": false,
+            "subFilters": null,
+            "items": [
+                {
+                    "id": "1_jaar",
+                    "label": "1 jaar",
+                    "itemsCount": 21,
+                    "checked": false
+                },
+                {
+                    "id": "1_\u2013_2_jaar",
+                    "label": "1 \u2013 2 jaar",
+                    "itemsCount": 6,
+                    "checked": false
+                },
+                {
+                    "id": "1_\u2013_3_jaar",
+                    "label": "1 \u2013 3 jaar",
+                    "itemsCount": 1,
+                    "checked": false
+                },
+                {
+                    "id": "15_jaar",
+                    "label": "1,5 jaar",
+                    "itemsCount": 1,
+                    "checked": false
+                },
+                {
+                    "id": "15_\u2013_2_jaar",
+                    "label": "1,5 \u2013 2 jaar",
+                    "itemsCount": 1,
+                    "checked": false
+                },
+                {
+                    "id": "2_jaar",
+                    "label": "2 jaar",
+                    "itemsCount": 43,
+                    "checked": false
+                },
+                {
+                    "id": "2_\u2013_3_jaar",
+                    "label": "2 \u2013 3 jaar",
+                    "itemsCount": 2,
+                    "checked": false
+                },
+                {
+                    "id": "2_\u2013_4_jaar",
+                    "label": "2 \u2013 4 jaar",
+                    "itemsCount": 1,
+                    "checked": false
+                },
+                {
+                    "id": "25_jaar",
+                    "label": "2,5 jaar",
+                    "itemsCount": 1,
+                    "checked": false
+                },
+                {
+                    "id": "25_\u2013_3_jaar",
+                    "label": "2,5 \u2013 3 jaar",
+                    "itemsCount": 2,
+                    "checked": false
+                },
+                {
+                    "id": "3_jaar",
+                    "label": "3 jaar",
+                    "itemsCount": 75,
+                    "checked": false
+                },
+                {
+                    "id": "3_\u2013_4_jaar",
+                    "label": "3 \u2013 4 jaar",
+                    "itemsCount": 1,
+                    "checked": false
+                },
+                {
+                    "id": "4_jaar",
+                    "label": "4 jaar",
+                    "itemsCount": 12,
+                    "checked": false
+                }
+            ]
+        },
+        {
+            "id": "start",
+            "type": "CheckboxList",
+            "label": "Startdatum",
+            "expand": false,
+            "subFilters": null,
+            "items": [
+                {
+                    "id": "01_augustus",
+                    "label": "01 augustus",
+                    "itemsCount": 156,
+                    "checked": false
+                },
+                {
+                    "id": "01_februari",
+                    "label": "01 februari",
+                    "itemsCount": 68,
+                    "checked": false
+                },
+                {
+                    "id": "flexibele_instroom",
+                    "label": "Flexibele instroom",
+                    "itemsCount": 45,
+                    "checked": false
+                },
+                {
+                    "id": "onbekend",
+                    "label": "Onbekend",
+                    "itemsCount": 5,
+                    "checked": false
+                }
+            ]
+        }
+    ],
+    "items": [
+        {
+            "tag": "Creatieve beroepen",
+            "level": "Niveau 4",
+            "location": "Groningen",
+            "title": "Acteur film",
+            "id": "5257",
+            "image": {
+                "url": "\/media\/g3bpiesk\/acteur-film.jpg?rxy=0.49746370028876113,0.530056837652779&width=320&height=200&v=1db3020db11dfb0&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/g3bpiesk\/acteur-film.jpg?rxy=0.49746370028876113,0.530056837652779&width=320&height=200&v=1db3020db11dfb0&format=webp 320w, \/media\/g3bpiesk\/acteur-film.jpg?rxy=0.49746370028876113,0.530056837652779&width=560&height=400&v=1db3020db11dfb0&format=webp 560w, \/media\/g3bpiesk\/acteur-film.jpg?rxy=0.49746370028876113,0.530056837652779&width=800&height=500&v=1db3020db11dfb0&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/acteur-film-bol"
+                }
+            ]
+        },
+        {
+            "tag": "Creatieve beroepen",
+            "level": "Niveau 4",
+            "location": "Groningen",
+            "title": "Acteur theater",
+            "id": "1419",
+            "image": {
+                "url": "\/media\/w3sbrnmi\/acteur-theater.jpg?width=320&height=200&v=1db3020678be630&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/w3sbrnmi\/acteur-theater.jpg?width=320&height=200&v=1db3020678be630&format=webp 320w, \/media\/w3sbrnmi\/acteur-theater.jpg?width=560&height=400&v=1db3020678be630&format=webp 560w, \/media\/w3sbrnmi\/acteur-theater.jpg?width=800&height=500&v=1db3020678be630&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/acteur-theater-bol"
+                }
+            ]
+        },
+        {
+            "tag": "Mobiliteit, transport en logistiek",
+            "level": "Niveau 3",
+            "location": "Groningen",
+            "title": "Adviseur mobiliteitsbranche",
+            "id": "3468",
+            "image": {
+                "url": "\/media\/zmoduap3\/adviseur-mobiliteitsbranche.jpg?rxy=0.4974950052693277,0.46619718309859154&width=320&height=200&v=1da17c1e5548720&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/zmoduap3\/adviseur-mobiliteitsbranche.jpg?rxy=0.4974950052693277,0.46619718309859154&width=320&height=200&v=1da17c1e5548720&format=webp 320w, \/media\/zmoduap3\/adviseur-mobiliteitsbranche.jpg?rxy=0.4974950052693277,0.46619718309859154&width=560&height=400&v=1da17c1e5548720&format=webp 560w, \/media\/zmoduap3\/adviseur-mobiliteitsbranche.jpg?rxy=0.4974950052693277,0.46619718309859154&width=800&height=500&v=1da17c1e5548720&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/adviseur-mobiliteitsbranche-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/adviseur-mobiliteitsbranche-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Techniek en bouw",
+            "level": "Niveau 3",
+            "location": "Stadskanaal",
+            "title": "Allround constructiewerker",
+            "id": "1337",
+            "image": {
+                "url": "\/media\/k3pp5sb4\/allround-constructiemedewerker-verkort.jpg?rxy=0.5000000152893678,0.468075117370892&width=320&height=200&v=1da22b8f3de2600&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/k3pp5sb4\/allround-constructiemedewerker-verkort.jpg?rxy=0.5000000152893678,0.468075117370892&width=320&height=200&v=1da22b8f3de2600&format=webp 320w, \/media\/k3pp5sb4\/allround-constructiemedewerker-verkort.jpg?rxy=0.5000000152893678,0.468075117370892&width=560&height=400&v=1da22b8f3de2600&format=webp 560w, \/media\/k3pp5sb4\/allround-constructiemedewerker-verkort.jpg?rxy=0.5000000152893678,0.468075117370892&width=800&height=500&v=1da22b8f3de2600&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-constructiewerker-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-constructiewerker-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Techniek en bouw",
+            "level": "Niveau 3",
+            "location": "Groningen",
+            "title": "Allround constructiewerker \u2013 verkort",
+            "id": "1335",
+            "image": {
+                "url": "\/media\/hvpj33a3\/allround-constructiewerker.jpg?rxy=0.49123248021922755,0.43427230046948356&width=320&height=200&v=1da22b8fd1416d0&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/hvpj33a3\/allround-constructiewerker.jpg?rxy=0.49123248021922755,0.43427230046948356&width=320&height=200&v=1da22b8fd1416d0&format=webp 320w, \/media\/hvpj33a3\/allround-constructiewerker.jpg?rxy=0.49123248021922755,0.43427230046948356&width=560&height=400&v=1da22b8fd1416d0&format=webp 560w, \/media\/hvpj33a3\/allround-constructiewerker.jpg?rxy=0.49123248021922755,0.43427230046948356&width=800&height=500&v=1da22b8fd1416d0&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-constructiewerker-verkort-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Laboratorium- en procestechniek",
+            "level": "Niveau 3",
+            "location": "Groningen",
+            "title": "Allround laborant\u00a0",
+            "id": "1223",
+            "image": {
+                "url": "\/media\/v3pnxol3\/allround-laborant.jpg?rxy=0.5025050253094079,0.5262910798122066&width=320&height=200&v=1da17a11d748540&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/v3pnxol3\/allround-laborant.jpg?rxy=0.5025050253094079,0.5262910798122066&width=320&height=200&v=1da17a11d748540&format=webp 320w, \/media\/v3pnxol3\/allround-laborant.jpg?rxy=0.5025050253094079,0.5262910798122066&width=560&height=400&v=1da17a11d748540&format=webp 560w, \/media\/v3pnxol3\/allround-laborant.jpg?rxy=0.5025050253094079,0.5262910798122066&width=800&height=500&v=1da17a11d748540&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-laborant-bol"
+                }
+            ]
+        },
+        {
+            "tag": "Laboratorium- en procestechniek",
+            "level": "Niveau 4",
+            "location": "Delfzijl",
+            "title": "Allround operationeel technicus",
+            "id": "1357",
+            "image": {
+                "url": "\/media\/5q4gzwoj\/allround-operationeel-technicus.jpg?rxy=0.5000000152893678,0.42488262910798125&width=320&height=200&v=1da22a4cb980710&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/5q4gzwoj\/allround-operationeel-technicus.jpg?rxy=0.5000000152893678,0.42488262910798125&width=320&height=200&v=1da22a4cb980710&format=webp 320w, \/media\/5q4gzwoj\/allround-operationeel-technicus.jpg?rxy=0.5000000152893678,0.42488262910798125&width=560&height=400&v=1da22a4cb980710&format=webp 560w, \/media\/5q4gzwoj\/allround-operationeel-technicus.jpg?rxy=0.5000000152893678,0.42488262910798125&width=800&height=500&v=1da22a4cb980710&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-operationeel-technicus-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-operationeel-technicus-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Creatieve beroepen",
+            "level": "Niveau 4",
+            "location": "Groningen",
+            "title": "Allround podiumtechnicus",
+            "id": "3181",
+            "image": {
+                "url": "\/media\/gm4hqpiz\/allround-podiumtechnicus.jpg?rxy=0.5012212153188212,0.5206542940312862&width=320&height=200&v=1db306500b31c90&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/gm4hqpiz\/allround-podiumtechnicus.jpg?rxy=0.5012212153188212,0.5206542940312862&width=320&height=200&v=1db306500b31c90&format=webp 320w, \/media\/gm4hqpiz\/allround-podiumtechnicus.jpg?rxy=0.5012212153188212,0.5206542940312862&width=560&height=400&v=1db306500b31c90&format=webp 560w, \/media\/gm4hqpiz\/allround-podiumtechnicus.jpg?rxy=0.5012212153188212,0.5206542940312862&width=800&height=500&v=1db306500b31c90&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-podiumtechnicus-bol"
+                }
+            ]
+        },
+        {
+            "tag": "Uiterlijke verzorging",
+            "level": "Niveau 4",
+            "location": "Groningen",
+            "title": "Allround schoonheidsspecialist",
+            "id": "1371",
+            "image": {
+                "url": "\/media\/feqkmlai\/allround-schoonheidsspecialist.jpg?rxy=0.5012515910620828,0.42603653252604834&width=320&height=200&v=1da16d3fb1dddc0&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/feqkmlai\/allround-schoonheidsspecialist.jpg?rxy=0.5012515910620828,0.42603653252604834&width=320&height=200&v=1da16d3fb1dddc0&format=webp 320w, \/media\/feqkmlai\/allround-schoonheidsspecialist.jpg?rxy=0.5012515910620828,0.42603653252604834&width=560&height=400&v=1da16d3fb1dddc0&format=webp 560w, \/media\/feqkmlai\/allround-schoonheidsspecialist.jpg?rxy=0.5012515910620828,0.42603653252604834&width=800&height=500&v=1da16d3fb1dddc0&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-schoonheidsspecialist-bol"
+                }
+            ]
+        },
+        {
+            "tag": "Creatieve beroepen",
+            "level": "Niveau 3",
+            "location": "Winschoten",
+            "title": "Allround signmaker",
+            "id": "1291",
+            "image": {
+                "url": "\/media\/yidd3dnq\/20221124_np_cam_sign_030website-vaste-breedte-4480-px.jpg?width=320&height=200&v=1da1d25294a94c0&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/yidd3dnq\/20221124_np_cam_sign_030website-vaste-breedte-4480-px.jpg?width=320&height=200&v=1da1d25294a94c0&format=webp 320w, \/media\/yidd3dnq\/20221124_np_cam_sign_030website-vaste-breedte-4480-px.jpg?width=560&height=400&v=1da1d25294a94c0&format=webp 560w, \/media\/yidd3dnq\/20221124_np_cam_sign_030website-vaste-breedte-4480-px.jpg?width=800&height=500&v=1da1d25294a94c0&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-signmaker-bol"
+                }
+            ]
+        },
+        {
+            "tag": "Mobiliteit, transport en logistiek",
+            "level": "Niveau 3",
+            "location": "Meerdere locaties",
+            "title": "Allround technicus voertuigen en mobiele werktuigen (bedrijfsauto\u2019s)",
+            "id": "1437",
+            "image": {
+                "url": "\/media\/s54f0fyp\/allround-technicus-voertuigen-en-mobiele-werktuigen-bedrijfsauto-s.jpg?rxy=0.5012525202993878,0.4624413145539906&width=320&height=200&v=1da192d43267ef0&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/s54f0fyp\/allround-technicus-voertuigen-en-mobiele-werktuigen-bedrijfsauto-s.jpg?rxy=0.5012525202993878,0.4624413145539906&width=320&height=200&v=1da192d43267ef0&format=webp 320w, \/media\/s54f0fyp\/allround-technicus-voertuigen-en-mobiele-werktuigen-bedrijfsauto-s.jpg?rxy=0.5012525202993878,0.4624413145539906&width=560&height=400&v=1da192d43267ef0&format=webp 560w, \/media\/s54f0fyp\/allround-technicus-voertuigen-en-mobiele-werktuigen-bedrijfsauto-s.jpg?rxy=0.5012525202993878,0.4624413145539906&width=800&height=500&v=1da192d43267ef0&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-technicus-voertuigen-en-mobiele-werktuigen-bedrijfsauto-s-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-technicus-voertuigen-en-mobiele-werktuigen-bedrijfsauto-s-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Mobiliteit, transport en logistiek",
+            "level": "Niveau 3",
+            "location": "Meerdere locaties",
+            "title": "Allround technicus voertuigen en mobiele werktuigen (personenauto\u2019s)",
+            "id": "1436",
+            "image": {
+                "url": "\/media\/h5upwpxb\/allround-technicus-voertuigen-en-mobiele-werktuigen-personenauto-s.jpg?rxy=0.49498999524928766,0.4568075117370892&width=320&height=200&v=1da1931dc0e5670&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/h5upwpxb\/allround-technicus-voertuigen-en-mobiele-werktuigen-personenauto-s.jpg?rxy=0.49498999524928766,0.4568075117370892&width=320&height=200&v=1da1931dc0e5670&format=webp 320w, \/media\/h5upwpxb\/allround-technicus-voertuigen-en-mobiele-werktuigen-personenauto-s.jpg?rxy=0.49498999524928766,0.4568075117370892&width=560&height=400&v=1da1931dc0e5670&format=webp 560w, \/media\/h5upwpxb\/allround-technicus-voertuigen-en-mobiele-werktuigen-personenauto-s.jpg?rxy=0.49498999524928766,0.4568075117370892&width=800&height=500&v=1da1931dc0e5670&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-technicus-voertuigen-en-mobiele-werktuigen-personenauto-s-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-technicus-voertuigen-en-mobiele-werktuigen-personenauto-s-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Techniek en bouw",
+            "level": "Niveau 3",
+            "location": "Stadskanaal",
+            "title": "Allround timmerman",
+            "id": "1231",
+            "image": {
+                "url": "\/media\/opgjgahj\/timmerman.jpg?rxy=0.5012525202993878,0.4906072532823287&width=320&height=200&v=1db878ca3033830&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/opgjgahj\/timmerman.jpg?rxy=0.5012525202993878,0.4906072532823287&width=320&height=200&v=1db878ca3033830&format=webp 320w, \/media\/opgjgahj\/timmerman.jpg?rxy=0.5012525202993878,0.4906072532823287&width=560&height=400&v=1db878ca3033830&format=webp 560w, \/media\/opgjgahj\/timmerman.jpg?rxy=0.5012525202993878,0.4906072532823287&width=800&height=500&v=1db878ca3033830&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-timmerman-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/allround-timmerman-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Zorg en welzijn",
+            "level": "Niveau 4",
+            "location": "Groningen",
+            "title": "Apothekersassistent",
+            "id": "1418",
+            "image": {
+                "url": "\/media\/cljfxnms\/apothekersassistent.jpg?rxy=0.4962425002593077,0.5563380281690141&width=320&height=200&v=1da1958220b3ff0&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/cljfxnms\/apothekersassistent.jpg?rxy=0.4962425002593077,0.5563380281690141&width=320&height=200&v=1da1958220b3ff0&format=webp 320w, \/media\/cljfxnms\/apothekersassistent.jpg?rxy=0.4962425002593077,0.5563380281690141&width=560&height=400&v=1da1958220b3ff0&format=webp 560w, \/media\/cljfxnms\/apothekersassistent.jpg?rxy=0.4962425002593077,0.5563380281690141&width=800&height=500&v=1da1958220b3ff0&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/apothekersassistent-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/apothekersassistent-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Entree",
+            "level": "Niveau 1",
+            "location": "Appingedam",
+            "title": "Assistent bouwen, wonen en onderhoud",
+            "id": "1313",
+            "image": {
+                "url": "\/media\/ajma4mga\/assistent-bouwen-wonen-en-onderhoud.jpg?rxy=0.4987300018309247,0.49247345809058757&width=320&height=200&v=1dace0df585bc10&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/ajma4mga\/assistent-bouwen-wonen-en-onderhoud.jpg?rxy=0.4987300018309247,0.49247345809058757&width=320&height=200&v=1dace0df585bc10&format=webp 320w, \/media\/ajma4mga\/assistent-bouwen-wonen-en-onderhoud.jpg?rxy=0.4987300018309247,0.49247345809058757&width=560&height=400&v=1dace0df585bc10&format=webp 560w, \/media\/ajma4mga\/assistent-bouwen-wonen-en-onderhoud.jpg?rxy=0.4987300018309247,0.49247345809058757&width=800&height=500&v=1dace0df585bc10&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-bouwen-wonen-en-onderhoud-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Entree",
+            "level": "Niveau 1",
+            "location": "Meerdere locaties",
+            "title": "Assistent dienstverlening",
+            "id": "1315",
+            "image": {
+                "url": "\/media\/dexhvi2i\/assistent-dienstverlening.jpg?rxy=0.49498999524928766,0.43051643192488265&width=320&height=200&v=1da17c43d3fc830&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/dexhvi2i\/assistent-dienstverlening.jpg?rxy=0.49498999524928766,0.43051643192488265&width=320&height=200&v=1da17c43d3fc830&format=webp 320w, \/media\/dexhvi2i\/assistent-dienstverlening.jpg?rxy=0.49498999524928766,0.43051643192488265&width=560&height=400&v=1da17c43d3fc830&format=webp 560w, \/media\/dexhvi2i\/assistent-dienstverlening.jpg?rxy=0.49498999524928766,0.43051643192488265&width=800&height=500&v=1da17c43d3fc830&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-dienstverlening-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-dienstverlening-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Entree",
+            "level": "Niveau 1",
+            "location": "Meerdere locaties",
+            "title": "Assistent dienstverlening (Entree NT2)",
+            "id": "1316",
+            "image": {
+                "url": "\/media\/5j0gvfve\/assistent-dienstverlening-entree-nt2.jpg?rxy=0.4969478526734618,0.3877120176042852&width=320&height=200&v=1da1ed4fa857040&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/5j0gvfve\/assistent-dienstverlening-entree-nt2.jpg?rxy=0.4969478526734618,0.3877120176042852&width=320&height=200&v=1da1ed4fa857040&format=webp 320w, \/media\/5j0gvfve\/assistent-dienstverlening-entree-nt2.jpg?rxy=0.4969478526734618,0.3877120176042852&width=560&height=400&v=1da1ed4fa857040&format=webp 560w, \/media\/5j0gvfve\/assistent-dienstverlening-entree-nt2.jpg?rxy=0.4969478526734618,0.3877120176042852&width=800&height=500&v=1da1ed4fa857040&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-dienstverlening-entree-nt2-bol"
+                }
+            ]
+        },
+        {
+            "tag": "Entree",
+            "level": "Niveau 1",
+            "location": "Groningen",
+            "title": "Assistent fietsenmaker",
+            "id": "1331",
+            "image": {
+                "url": "\/media\/yehh40ry\/assistent-fietsenmaker.jpg?rxy=0.5000000152893678,0.4887323943661972&width=320&height=200&v=1db35bd921f2f90&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/yehh40ry\/assistent-fietsenmaker.jpg?rxy=0.5000000152893678,0.4887323943661972&width=320&height=200&v=1db35bd921f2f90&format=webp 320w, \/media\/yehh40ry\/assistent-fietsenmaker.jpg?rxy=0.5000000152893678,0.4887323943661972&width=560&height=400&v=1db35bd921f2f90&format=webp 560w, \/media\/yehh40ry\/assistent-fietsenmaker.jpg?rxy=0.5000000152893678,0.4887323943661972&width=800&height=500&v=1db35bd921f2f90&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-fietsenmaker-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-fietsenmaker-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Entree",
+            "level": "Niveau 1",
+            "location": "Groningen",
+            "title": "Assistent horeca, voeding of voedingsindustrie",
+            "id": "1319",
+            "image": {
+                "url": "\/media\/5grfkqaw\/assistent-horeca-voeding-of-voedingsindustrie.jpg?rxy=0.5,0.539442002953588&width=320&height=200&v=1db02a3342ab320&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/5grfkqaw\/assistent-horeca-voeding-of-voedingsindustrie.jpg?rxy=0.5,0.539442002953588&width=320&height=200&v=1db02a3342ab320&format=webp 320w, \/media\/5grfkqaw\/assistent-horeca-voeding-of-voedingsindustrie.jpg?rxy=0.5,0.539442002953588&width=560&height=400&v=1db02a3342ab320&format=webp 560w, \/media\/5grfkqaw\/assistent-horeca-voeding-of-voedingsindustrie.jpg?rxy=0.5,0.539442002953588&width=800&height=500&v=1db02a3342ab320&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-horeca-voeding-of-voedingsindustrie-bol"
+                },
+                {
+                    "label": "BBL deeltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-horeca-voeding-of-voedingsindustrie-bbl"
+                }
+            ]
+        },
+        {
+            "tag": "Entree",
+            "level": "Niveau 1",
+            "location": "Groningen",
+            "title": "Assistent horeca, voeding of voedingsindustrie (Entree NT2)",
+            "id": "1320",
+            "image": {
+                "url": "\/media\/2ghlt3ej\/assistent-horeca-voeding-of-voedingsindustrie-entree-nt2.jpg?rxy=0.49874686716791977,0.5469574942600435&width=320&height=200&v=1db02a38617e7c0&format=webp",
+                "alt": "",
+                "dimensions": {
+                    "width": 320,
+                    "height": 200
+                },
+                "srcset": [
+                    {
+                        "url": "\/media\/2ghlt3ej\/assistent-horeca-voeding-of-voedingsindustrie-entree-nt2.jpg?rxy=0.49874686716791977,0.5469574942600435&width=320&height=200&v=1db02a38617e7c0&format=webp 320w, \/media\/2ghlt3ej\/assistent-horeca-voeding-of-voedingsindustrie-entree-nt2.jpg?rxy=0.49874686716791977,0.5469574942600435&width=560&height=400&v=1db02a38617e7c0&format=webp 560w, \/media\/2ghlt3ej\/assistent-horeca-voeding-of-voedingsindustrie-entree-nt2.jpg?rxy=0.49874686716791977,0.5469574942600435&width=800&height=500&v=1db02a38617e7c0&format=webp 800w",
+                        "type": "webp",
+                        "sizes": "(min-width: 1200px) 302px, (min-width: 768px) calc((100vw - 280px) \/ 2), calc(100vw - 48px)"
+                    }
+                ]
+            },
+            "urls": [
+                {
+                    "label": "BOL voltijd",
+                    "url": "\/voor-studenten\/opleidingen\/assistent-horeca-voeding-of-voedingsindustrie-entree-nt2-bol"
+                }
+            ]
+        }
+    ],
+    "q": null,
+    "currentPage": 1,
+    "totalPages": 8,
+    "ElapsedMilliseconds": 0,
+    "Cached": "2025-06-02T17:51:46.9595824+00:00"
+}
