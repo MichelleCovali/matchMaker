@@ -263,15 +263,20 @@ class UniversityScraperController extends Controller
     public function scrapeWindesheim()
     {
         try {
-            $university = University::firstOrCreate([
+        $university = University::firstOrCreate(
+            ['slug' => 'windesheim'],
+            [
                 'name' => 'Windesheim University of Applied Sciences',
-                'city' => 'Zwolle'
-            ]);
+                'city' => 'Zwolle',
+                'website' => 'https://www.windesheim.nl'
+            ]
+        );
 
             $programs = [];
             $page = 1;
             $hasMorePages = true;
             $errors = [];
+            $coursesProcessed = 0;
 
             while ($hasMorePages) {
                 try {
@@ -373,6 +378,7 @@ class UniversityScraperController extends Controller
                                         'url' => $url
                                     ]
                                 );
+                                $coursesProcessed++;
                                 $errors[] = "Successfully added program: " . $title;
                             } else {
                                 $errors[] = "Missing title or type for program: " . ($title ?? 'unknown');
