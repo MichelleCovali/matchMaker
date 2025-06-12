@@ -43,6 +43,12 @@ class ScrapeAllUniversities extends Command
                 'slug' => 'noorderpoort',
                 'city' => 'Groningen',
                 'website' => 'https://www.noorderpoort.nl'
+            ],
+            [
+                'name' => 'Windesheim University of Applied Sciences',
+                'slug' => 'windesheim',
+                'city' => 'Zwolle',
+                'website' => 'https://www.windesheim.com'
             ]
         ];
 
@@ -77,6 +83,13 @@ class ScrapeAllUniversities extends Command
         $scraper->scrapeNoorderpoort();
         $afterCount = Course::where('university_id', University::where('slug', 'noorderpoort')->first()->id)->count();
         $this->info("Noorderpoort courses: {$beforeCount} -> {$afterCount}");
+
+        $this->info('Scraping Windesheim...');
+        $beforeCount = Course::where('university_id', University::where('slug', 'windesheim')->first()->id)->count();
+        $scraper->scrapeWindesheim();
+        $afterCount = Course::where('university_id', University::where('slug', 'windesheim')->first()->id)->count();
+        $this->info("Windesheim courses: {$beforeCount} -> {$afterCount}");
+        
         
         // Show final counts
         $this->info("\nFinal course counts per university:");
