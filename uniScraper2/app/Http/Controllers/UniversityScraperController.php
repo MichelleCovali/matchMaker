@@ -8,6 +8,7 @@ use App\Models\University;
 use App\Models\Course;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
+use Illuminate\Support\Facades\Log;
 
 class UniversityScraperController extends Controller
 {
@@ -262,163 +263,80 @@ class UniversityScraperController extends Controller
      */
     public function scrapeWindesheim()
     {
+        $errors = [];
+        $coursesProcessed = 0;
+        $pagesScraped = 1;
+
         try {
-        $university = University::firstOrCreate(
-            ['slug' => 'windesheim'],
-            [
-                'name' => 'Windesheim University of Applied Sciences',
-                'city' => 'Zwolle',
-                'website' => 'https://www.windesheim.nl'
-            ]
-        );
+            $university = University::firstOrCreate(
+                ['slug' => 'windesheim'],   // condition to find existing record
+                [                           // attributes to set if not found
+                    'name' => 'Windesheim University of Applied Sciences',
+                    'city' => 'Zwolle',
+                    'website' => 'https://www.windesheim.com'
+                ]
+            );
 
-            $programs = [];
-            $page = 1;
-            $hasMorePages = true;
-            $errors = [];
-            $coursesProcessed = 0;
+            $jsonPath = storage_path('windesheim.json');
 
-            while ($hasMorePages) {
-                try {
-                    // First, get the main programs page to extract the program links
-                    $response = Http::withHeaders([
-                        'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-                        'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                        'Accept-Language' => 'en-US,en;q=0.5',
-                    ])->get('https://www.windesheim.nl/opleidingen');
-
-                    if (!$response->successful()) {
-                        throw new \Exception("Failed to fetch programs page: " . $response->status());
-                    }
-
-                    $html = $response->body();
-                    $errors[] = "Got HTML response, length: " . strlen($html);
-                    
-                    // Debug: Save the HTML to a file for inspection
-                    file_put_contents(storage_path('windesheim.html'), $html);
-                    $errors[] = "Saved HTML to windesheim.html for inspection";
-
-                    $dom = new \DOMDocument();
-                    libxml_use_internal_errors(true); // Suppress HTML5 errors
-                    @$dom->loadHTML($html);
-                    libxml_clear_errors();
-                    
-                    $xpath = new \DOMXPath($dom);
-
-                    // Try different selectors and log what we find
-                    $selectors = [
-                        "//li[contains(@class, 'card--study')]",
-                        "//div[contains(@class, 'card--study')]",
-                        "//div[contains(@class, 'program-card')]",
-                        "//div[contains(@class, 'program-item')]",
-                        "//div[contains(@class, 'card')]//h2[contains(@class, 'title')]"
-                    ];
-
-                    foreach ($selectors as $selector) {
-                        $nodes = $xpath->query($selector);
-                        $errors[] = "Selector '$selector' found " . $nodes->length . " nodes";
-                        if ($nodes->length > 0) {
-                            $errors[] = "First node HTML: " . $dom->saveHTML($nodes->item(0));
-                        }
-                    }
-
-                    // Find all program cards using the correct selector
-                    $programCards = $xpath->query("//li[contains(@class, 'card--study')]");
-                    
-                    if ($programCards->length === 0) {
-                        $errors[] = "No program cards found with primary selector";
-                        // Try alternative selector
-                        $programCards = $xpath->query("//div[contains(@class, 'card--study')]");
-                    }
-
-                    $errors[] = "Found " . $programCards->length . " program cards";
-
-                    foreach ($programCards as $card) {
-                        try {
-                            // Get the program title
-                            $titleNode = $xpath->query(".//h2[contains(@class, 'title')]", $card)->item(0);
-                            if (!$titleNode) {
-                                $errors[] = "No title found in card: " . $dom->saveHTML($card);
-                                continue;
-                            }
-                            $title = trim($titleNode->textContent);
-                            $errors[] = "Found title: " . $title;
-
-                            // Get the program type
-                            $type = null;
-                            $typeNodes = $xpath->query(".//ul[contains(@class, 'list--icons')]/li", $card);
-                            foreach ($typeNodes as $typeNode) {
-                                $text = trim($typeNode->textContent);
-                                $errors[] = "Checking type text: " . $text;
-                                if (strpos($text, 'Bachelor') !== false) {
-                                    $type = 'Bachelor';
-                                    break;
-                                } elseif (strpos($text, 'Master') !== false) {
-                                    $type = 'Master';
-                                    break;
-                                } elseif (strpos($text, 'Post-hbo') !== false) {
-                                    $type = 'Post-hbo';
-                                    break;
-                                }
-                            }
-
-                            // Get the program URL
-                            $urlNode = $xpath->query(".//a[contains(@href, '/opleidingen/')]", $card)->item(0);
-                            $url = $urlNode ? 'https://www.windesheim.nl' . $urlNode->getAttribute('href') : null;
-
-                            if ($title && $type) {
-                                Course::updateOrCreate(
-                                    [
-                                        'university_id' => $university->id,
-                                        'title' => $title
-                                    ],
-                                    [
-                                        'type' => $type,
-                                        'location' => 'Zwolle',
-                                        'url' => $url
-                                    ]
-                                );
-                                $coursesProcessed++;
-                                $errors[] = "Successfully added program: " . $title;
-                            } else {
-                                $errors[] = "Missing title or type for program: " . ($title ?? 'unknown');
-                            }
-                        } catch (\Exception $e) {
-                            $errors[] = "Error processing program card: " . $e->getMessage();
-                            continue;
-                        }
-                    }
-
-                    $hasMorePages = false; // We're getting all programs in one go
-                } catch (\Exception $e) {
-                    $errors[] = "Error scraping Windesheim page {$page}: " . $e->getMessage();
-                    break;
-                }
+            if (!file_exists($jsonPath)) {
+                throw new \Exception("JSON file not found at $jsonPath");
             }
 
-            // Get all programs for this university
-            $programs = Course::where('university_id', $university->id)->get();
-            
-            // Return the view with the data
+            $jsonContent = file_get_contents($jsonPath);
+            $data = json_decode($jsonContent, true);
+
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                throw new \Exception("Error decoding JSON: " . json_last_error_msg());
+            }
+
+
+            $programs = $data['items'] ?? $data;
+
+            foreach ($programs as $program) {
+                // Adjust these keys according to your JSON structure
+                $title = $program['title'] ?? null;
+                $type = $program['type'] ?? null;
+                Log::info("Processing course", ['title' => $title, 'type' => $type]);
+                
+                $url = isset($program['url']) ? 'https://www.windesheim.nl' . $program['url'] : null;
+
+                if (!$title) {
+                    $errors[] = "Skipping program with missing title";
+                    continue;
+                }
+
+                Course::updateOrCreate(
+                    [
+                        'university_id' => $university->id,
+                        'title' => $title
+                    ],
+                    [
+                        'type' => $type,
+                        'location' => 'Zwolle',
+                        'url' => $url
+                    ]
+                );
+                $coursesProcessed++;
+            }
+
             return view('universities.programs', [
                 'university' => $university,
-                'programs' => $programs,
+                'programs' => Course::where('university_id', $university->id)->get(),
                 'stats' => [
                     'courses_processed' => $coursesProcessed,
-                    'pages_scraped' => $page,
-                    'errors' => $errors
+                    'pages_scraped' => $pagesScraped,
+                    'errors' => $errors,
                 ]
             ]);
-            
         } catch (\Exception $e) {
-            // Return the view with error information
             return view('universities.programs', [
                 'university' => $university ?? null,
                 'programs' => collect([]),
                 'stats' => [
-                    'courses_processed' => 0,
-                    'pages_scraped' => 0,
-                    'errors' => [$e->getMessage()]
+                    'courses_processed' => $coursesProcessed,
+                    'pages_scraped' => $pagesScraped,
+                    'errors' => array_merge($errors, [$e->getMessage()]),
                 ]
             ]);
         }
